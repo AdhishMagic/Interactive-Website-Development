@@ -3,7 +3,7 @@ let isFirstGradient = true;
 
 button.addEventListener('click', function() {
     if (isFirstGradient) {
-        document.body.style.background = 'linear-gradient(to right,rgb(24, 6, 48), #0B0C10)';
+        document.body.style.background = 'linear-gradient(to right,rgb(5, 113, 139),rgb(0, 47, 68))';
         document.body.style.color= '#FEFFFF';
     } else {
         document.body.style.background = 'linear-gradient(to right, #e2e2e2, #b4fcf7)';
