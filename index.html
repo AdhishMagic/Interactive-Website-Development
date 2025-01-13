@@ -1,0 +1,177 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Interactive Website</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="background: linear-gradient(to right, #e2e2e2, #b4fcf7);">
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+    <div class="leaf"><img src="leave1.png"></div>
+
+    <div class="px-5" id="header">
+    <nav id="navbar-example2" class="navbar mb-3">
+        <h1 style="font-weight: bold; display: inline;">Interactive Website Development</h1>        
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#header" aria-current="page" style="text-decoration: underline;">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#mode">IBox</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#forms">LogIn</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#footer">Contact</a>
+          </li><br>
+          <button id="changeColor" class="changeColor" style="display:inline; border-radius: 50%; "><i class='bx bxs-moon'></i></button>
+
+        </ul>
+      </nav>
+    </div>
+
+    <div class="small-box">
+        <div class="content">
+          <h1>Welcome To Resposible Website</h1>
+          <p>You can customize boxes in real time! Change text color, font size, font family, font style, border radius, and box color with ease. <br>Create unique designs and explore endless possibilities. Dive in and bring your ideas to life!</p>
+      </div>
+        <div class="infinity-loop"></div>
+    </div>
+
+
+    <selection class="text-center" id="mode">
+      <h1 style=" font-size: 3rem; font-family: Franklin Gothic Medium;">Interactive Boxes</h1>
+      <div class="contain">
+        <div class="box">
+            <i class='bx bxs-palette'></i>            
+            <h2>Colours</h2>
+            <p>Click and change the Background colour</p>
+            <input type="color" style="width:200px" onchange="bgChange()" class="form-control form-control-color, text-center" id="input" value="#563d7c" title="Choose your color"> 
+        </div>
+
+        <div class="box">
+            <i class='bx bx-text'></i>
+            <h2>Styles</h2>
+            <p>Click to change the Text styles</p>
+            <button id="changeStyle" class="button">Click Me</button>
+        </div>
+
+        <div class="box">
+            <i class='bx bxs-package'></i>
+            <h2>Border Curves</h2>
+            <p>Click to change the Border Curves</p>
+            <button id="border" class="button">Click Me</button>
+        </div>
+
+        <div class="box">
+            <i class='bx bx-font-size'></i>
+            <h2>Font Sizes</h2>
+            <p>Click to adjust the font sizes</p>
+            <button id="fontSize" class="button" onclick="">Click Me</button>
+        </div>
+
+        <div class="box">
+            <i class='bx bx-align-left' ></i>
+            <h2>Text Colour</h2>
+            <p>Click to change the Text Colour</p>
+            <button id="textColour" class="button" onclick="">Click Me</button>
+        </div>
+
+        <div class="box">
+            <i class='bx bx-font-family'></i>
+            <h2>Font Family</h2>
+            <p>Click to adjust the font family</p>
+            <button id="changeFont" class="button" onclick="">Click Me</button>
+        </div>
+      </div>
+    </selection><br><br>
+
+    <div id="forms">
+      <div class="form-container">
+        <div class="tabs">
+          <button id="login-tab" class="active">Login</button>
+          <button id="register-tab">Register</button>
+        </div>
+        <form id="login-form" class="form active">
+          <h2>Welcome Back!</h2>
+          <p class="description">Please login to continue.</p>
+          <div class="form-group">
+            <input type="email" id="login-email" placeholder="" required>
+            <label for="login-email">Email</label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="login-password" placeholder="" required>
+            <label for="login-password">Password</label>
+          </div>
+          <button type="submit" class="btn">Login</button>
+        </form>
+        <form id="register-form" class="form">
+          <h2>Create an Account</h2>
+          <p class="description">Join us and explore exciting features.</p>
+          <div class="form-group">
+            <input type="text" id="fullname" placeholder="" required>
+            <label for="fullname">Full Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="register-email" placeholder="" required>
+            <label for="register-email">Email</label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="register-password" placeholder="" required>
+            <label for="register-password">Password</label>
+          </div>
+          <div class="form-group">
+            <input type="password" id="confirm-password" placeholder="" required>
+            <label for="confirm-password">Confirm Password</label>
+          </div>
+          <button type="submit" class="btn">Register</button>
+        </form>
+       </div>
+    </div>
+
+    <div id="footer">
+        <footer class=" bg-black text-white py-5 mt-5">
+            <p class="text-center">&copy; 2024 Interactive Website Project</p>
+            <p class="text-center">Privacy Policy</p>
+          <div class="px-5">
+            <h1 style="text-decoration: underline;">Contact</h1><br>
+            <p>Bala Adhish N D </p>
+            <p> Email: balaadhish.cbe@gmail.com</p>
+            <p>Mobile: 9042300710</p>
+            <a href="https://www.linkedin.com/in/bala-adhish4/">LinkedIn</a>
+          </div>
+        </footer>
+    </div>
+    <a href="#header" id="up">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAPNJREFUWEft1dsNwjAMBVB3EhgNJgEmgdFgE7hSIpkqsR07H0E4ElJR+ji+iduNFhvbYh5KkLYimdDfJnQnoten+quWgDY/Yw8BcyoPukVRURDH1OJDqAiohQmjvCAJE0J5QBLmSURHtnGHl28UtMc8Sndd2KbGYf2P4yHUCKiFOZeu4iC0Pn4ulBXUwyAB/nCehgtlAUkYCbSfMy2fBcQrxZ7BMvHRS6iew+dxLe7RHRZQrfTQwGgJcRQ6UMTgZCtIKkpLSPt8fc0nSIsrE8qEyptbCyL8Hvqptnen0bpwRpclaGoC2s1yyTIhLQFtfrk99AbCIT8lZZNsUwAAAABJRU5ErkJggg=="/>
+    </a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="JavaScript/script.js"></script>
+</body>
+</html>
